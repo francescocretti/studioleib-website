@@ -15,6 +15,20 @@ html, body {
   }
 }
 
+#logo {
+  width: 50%;
+  margin-top: 5rem;
+}
+
+#header {
+  font-family: sans-serif;
+  text-transform: uppercase;
+  font-weight: 100;
+  letter-spacing: 3px;
+  margin-top: 5rem;
+  color: darkmagenta;
+}
+
 /* SMALL SCREENS AND iPad PRO */
 @media screen and (max-width: 1199px) {}
 
@@ -25,4 +39,8 @@ html, body {
 @media screen and (max-width: 768px) {}
 
 /* SMARTPHONES (portait) */
-@media screen and (max-width: 576px) {}
+@media screen and (max-width: 576px) {
+  #logo {
+    width: 90%;
+  }
+}
