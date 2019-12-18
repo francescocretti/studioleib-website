@@ -1,0 +1,29 @@
+name: Publish website valentinamaistriostetrica.it
+
+on:
+  push:
+    branches: master
+
+jobs:
+  deploy-website:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - name: install lftp
+        run: |
+          sudo apt-get update -q
+          sudo apt-get install -y lftp
+      - name: Deploy on OVH FTP cluster
+        env:
+          HOST: ${{ secrets.FTP_CLUSTER }}
+          USER: ${{ secrets.FTP_USER }}
+          PASS: ${{ secrets.FTP_PWD }}
+        run: |
+          echo Opening $HOST connection with LFTP
+          pwd
+          ls
+          lftp -f "
+          open -u $USER,$PASS $HOST
+          mirror --exclude 'bin' --exclude 'boot' --exclude '.git' --exclude 'node_modules' --exclude-glob '*.eslintignore' --exclude-glob '*.eslintrc'  --exclude-glob '*.DS_Store' --reverse --delete --verbose ./ /www
+          bye
+          "
