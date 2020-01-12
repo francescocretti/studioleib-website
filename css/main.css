@@ -38,6 +38,22 @@ html, body {
   color: var(--vm-wine);
 }
 
+.social-icons > a:hover {
+  text-decoration: none;
+}
+
+.social-icon {
+  font-size: 3rem;
+  color: var(--vm-corallo);
+  padding: 0 2rem;
+  transition: all .3s;
+  cursor: pointer;
+}
+
+.social-icon:hover {
+  color: var(--vm-wine);
+}
+
 /* SMALL SCREENS AND iPad PRO */
 @media screen and (max-width: 1199px) {}
 
