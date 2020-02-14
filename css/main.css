@@ -25,20 +25,54 @@ html, body {
   }
 }
 
-nav {
-  padding: .5rem 2rem !important;
-}
-
-footer {
-  background: var(--vm-skin);
-}
-
 a {
   transition: opacity .3s;
 }
 
 a:hover {
   opacity: .7;
+}
+
+hr.wine {
+  width: 100%;
+  border-top: 1px solid var(--vm-wine);
+}
+
+.color-wine {
+  color: var(--vm-wine);
+}
+
+.color-corallo {
+  color: var(--vm-corallo);
+}
+
+.color-skin {
+  color: var(--vm-skin);
+}
+
+.weight-900 {
+  font-weight: 900;
+}
+
+.pt-5rem {
+  padding-top: 5rem !important;
+}
+
+.icons {
+  margin-top: 1rem;
+}
+
+.icons .icon {
+  color: var(--vm-corallo);
+  font-size: 1.6rem;
+  padding: 0 .6rem;
+  cursor: pointer;
+}
+
+
+/* NAVBAR */
+nav {
+  padding: .5rem 2rem !important;
 }
 
 #navbar-logo {
@@ -52,21 +86,27 @@ a:hover {
 }
 
 .nav-item .nav-link {
-   color: var(--vm-corallo) !important;
+  color: var(--vm-corallo) !important;
+}
+
+/* MOBILE TTOGGLRE */
+.navbar-light .navbar-toggler {
+  border: none;
+}
+
+.navbar-light .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgb(237, 111, 96)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='3' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* FOOTER */
+footer {
+  background: var(--vm-skin);
 }
 
 #footer-logo {
   width: 300px;
   height: auto;
-  margin-top: 5rem;
-}
-
-#header {
-  text-transform: uppercase;
-  font-weight: 100;
-  letter-spacing: 3px;
-  margin-top: 5rem;
-  color: var(--vm-wine);
+  margin-top: 3rem;
 }
 
 .social-icons > a:hover {
@@ -85,6 +125,42 @@ a:hover {
   color: var(--vm-wine);
 }
 
+ul.footer-site-map {
+  list-style: none;
+}
+
+ul.footer-site-map > li {
+  padding: .5rem 0;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+ul.footer-site-map > li > a {
+  color: var(--vm-corallo);
+}
+
+/* OTHER STUFF */
+.quote {
+  font-weight: 900;
+  color: var(--vm-corallo);
+}
+
+.author {
+  color: var(--vm-wine);
+  position: relative;
+  left: 10%;
+  font-style: italic;
+}
+
+#header {
+  text-transform: uppercase;
+  font-weight: 100;
+  letter-spacing: 3px;
+  margin-top: 5rem;
+  color: var(--vm-wine);
+}
+
+
 /* SMALL SCREENS AND iPad PRO */
 @media screen and (max-width: 1199px) {}
 
@@ -96,7 +172,20 @@ a:hover {
 
 /* SMARTPHONES (portait) */
 @media screen and (max-width: 576px) {
-  #logo {
-    width: 90%;
+  ul.footer-site-map {
+    padding: 0;
+  }
+
+  ul.footer-site-map > li {
+    padding: .7rem 0;
+  }
+
+  #footer-logo {
+    margin: 3rem 0;
+  }
+
+  .icons .icon {
+    font-size: 2rem;
+    padding: 0 1rem;
   }
 }
