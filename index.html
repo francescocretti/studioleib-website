@@ -33,19 +33,43 @@
   <link rel="stylesheet" href="/css/lib/bootstrap.min.css">
   <link rel="stylesheet" href="/css/main.css">
 
+  <style media="screen">
+    .pills-logo {
+      max-width: 70%;
+    }
+
+    .pills-col {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  </style>
+
 </head>
 
 <body>
   <div id="headerBar"></div>
 
-  <div class="container">
-    <div class="row mt-5">
-      <div class="col-12 mt-5 mb-4 text-center">
-        <h1 class="quote">Non si nasce donne: si diventa</h1>
-        <h4 class="author">Simone de Beauvoir</h4>
-      </div>
-      <div class="col-12 mt-4 mb-5 text-center">
-        <img src="/img/donnine.svg" alt="Valentina Maistri">
+  <div class="row">
+    <div class="col-10 mx-auto">
+      <div class="row my-5">
+        <div class="col-9">
+          <img class="w-100" src="/img/donninesito-01.png" alt="Valentina Maistri">
+        </div>
+        <div class="col-2 offset-1 text-right pills-col">
+          <a href="/vivere-la-gravidanza">
+            <img class="pills-logo" src="/img/iconesito-01.svg" alt="Vivere la gravidanza" title="Vivere la gravidanza">
+          </a>
+          <a href="/cura-del-pavimento-pelvico">
+            <img class="pills-logo" src="/img/iconesito-02.svg" alt="Cura del pavimento pelvico" title="Cura del pavimento pelvico">
+          </a>
+          <a href="/benessere-femminile">
+            <img class="pills-logo" src="/img/iconesito-03.svg" alt="Benessere femminile" title="Benessere femminile">
+          </a>
+          <a href="/dopo-la-nascita">
+            <img class="pills-logo" src="/img/iconesito-04.svg" alt="Dopo la nascita" title="Dopo la nascita">
+          </a>
+        </div>
       </div>
     </div>
   </div>

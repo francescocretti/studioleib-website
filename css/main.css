@@ -80,8 +80,14 @@ nav {
 }
 
 #navbar-logo {
-  width: 80px;
+  width: 170px;
   height: auto;
+}
+
+#nabvar-title {
+  color: var(--vm-wine);
+  padding: 0 1.3rem 0 0;
+  /* font-style: italic; */
 }
 
 .nav-item {
@@ -90,6 +96,7 @@ nav {
 }
 
 .nav-item .nav-link {
+  font-weight: 600;
   color: var(--vm-corallo) !important;
 }
 
