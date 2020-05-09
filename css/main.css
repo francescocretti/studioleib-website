@@ -73,6 +73,10 @@ hr.wine {
   cursor: pointer;
 }
 
+.bordered-img {
+  padding: .2rem;
+  border: 1px solid var(--vm-wine);
+}
 
 /* NAVBAR */
 nav {
