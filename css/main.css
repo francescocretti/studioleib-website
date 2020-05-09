@@ -26,6 +26,7 @@ html, body {
 }
 
 a {
+  color: var(--vm-verde);
   transition: opacity .3s;
 }
 
