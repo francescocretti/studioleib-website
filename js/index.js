@@ -6,7 +6,7 @@ const updateCCYear = () => {
 };
 
 // header
-$('#headerBar').load('/templates/header.html', () => {
+$('#headerBar').load('./templates/header.html', () => {
   const loc = window.location.pathname;
   $('.language a').removeClass('active');
   if (loc === '/en') {
@@ -19,4 +19,4 @@ $('#headerBar').load('/templates/header.html', () => {
 });
 
 // footer
-$('#footerBar').load('/templates/footer.html', () => updateCCYear());
+$('#footerBar').load('./templates/footer.html', () => updateCCYear());
